@@ -1,0 +1,6 @@
+{
+  "name": "Menu Sem Estresse",
+  "description": "Plataforma premium de planejamento alimentar inteligente para mulheres, mães e pessoas ocupadas com cardápios semanais, receitas práticas, lista de compras e manual de marmitas.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
