@@ -687,7 +687,7 @@ export default function App() {
     if (!printData) return '';
     if (printData.type === 'menu') {
       return `📅 MENU SEM ESTRESSE - SEMANA ${currentWeek}\n\n` + 
-        weeklyMenu.days.map(day => `• ${day.dayName}\n  Almoço: ${day.lunch.name}\n  Jantar: ${day.dinner.name}`).join('\n\n') +
+        weeklyMenu.days.map(day => `• ${day.dayName}\n  Janta: ${day.lunch.name}\n  Jantar: ${day.dinner.name}`).join('\n\n') +
         `\n\nGerado em Menu Sem Estresse.`;
     }
     if (printData.type === 'shopping') {
@@ -815,7 +815,7 @@ export default function App() {
           <thead>
             <tr>
               <th style="width: 25%;">Dia da Semana</th>
-              <th style="width: 37.5%;">🌞 Almoço Recomendado</th>
+              <th style="width: 37.5%;">🌞 Janta Recomendada</th>
               <th style="width: 37.5%;">🌙 Jantar Prático</th>
             </tr>
           </thead>
@@ -1255,7 +1255,7 @@ export default function App() {
                           
                           {/* Progress dots */}
                           <div className="flex gap-1 mt-1.5">
-                            <span className={`h-1.5 w-1.5 rounded-full ${hasLunchFinished ? 'bg-emerald-500' : 'bg-slate-200'}`} title="Almoço"></span>
+                            <span className={`h-1.5 w-1.5 rounded-full ${hasLunchFinished ? 'bg-emerald-500' : 'bg-slate-200'}`} title="Janta"></span>
                             <span className={`h-1.5 w-1.5 rounded-full ${hasDinnerFinished ? 'bg-emerald-500' : 'bg-slate-200'}`} title="Jantar"></span>
                           </div>
                         </button>
@@ -1296,7 +1296,7 @@ export default function App() {
                     {/* Lunch Item block */}
                     <div className="border border-slate-100 rounded-2xl p-4 bg-stone-50/50 hover:shadow-xs transition relative">
                       <div className="flex items-center justify-between mb-3 text-xs">
-                        <span className="font-mono text-purple-600 bg-purple-50 px-2 py-0.5 rounded-md font-bold">🌞 ALMOÇO DO DIA</span>
+                        <span className="font-mono text-purple-600 bg-purple-50 px-2 py-0.5 rounded-md font-bold">🌞 JANTA DO DIA</span>
                         
                         {/* Check completed meal */}
                         <button
@@ -3222,7 +3222,7 @@ export default function App() {
                   <thead>
                     <tr className="bg-purple-100/60 text-purple-900 border-b border-purple-200">
                       <th className="p-3 text-left font-serif font-bold text-sm">Dia da Semana</th>
-                      <th className="p-3 text-left font-serif font-bold text-sm">🌞 Almoço Recomendado</th>
+                      <th className="p-3 text-left font-serif font-bold text-sm">🌞 Janta Recomendada</th>
                       <th className="p-3 text-left font-serif font-bold text-sm">🌙 Jantar Prático</th>
                     </tr>
                   </thead>
